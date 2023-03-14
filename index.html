@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIVIK</title>
+    <!--Icon-->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!--fontAwesome-->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <!--https://michalsnik.github.io/aos/-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--MEU CSS-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--*-----------------NavBar------------------->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/Vector.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quemSomos">QUEM SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nossosServicos">NOSSOS SERVIÇOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nossosProjetos">NOSSOS PROJETOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!--*-----------------Banner------------------->
+    <main>
+        <section id="banner">
+            <img src="img/grad1.png" id="grad1">
+            <div class="container text-center">
+                <h2 class="titleBanner" data-aos="fade-up">SOLUÇÕES INOVADORAS E EFICIENTES</h2>
+                <p class="subtitle" data-aos="fade-up">QUE SUPERAM SUAS EXPECTATIVAS.</p>
+                <a href="#quemSomos"><img src="img/seta.svg" id="seta" data-aos="fade-up"></a>
+            </div>
+        </section>
+
+        <!--*-----------------QUEM SOMOS------------------->
+        <section id="quemSomos">
+            <h1 class="title"> QUEM SOMOS</h1>
+            <img src="img/grad.png" id="grad2" class="img-fluid">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-6 text-justify">
+                        <p>Nós somos uma equipe de profissionais apaixonados por tecnologia e comprometidos em fornecer
+                            soluções de alta qualidade para nossos clientes. Com anos de experiência no setor de TI,
+                            temos a habilidade e conhecimento para ajudar sua empresa a alcançar seus objetivos de
+                            negócios por meio de sistemas inovadores e personalizados. Se você está procurando uma
+                            empresa confiável e competente para ajudar a sua empresa a atingir o sucesso, não procure
+                            mais. Confira abaixo nossos serviços!.
+                        </p>
+
+                        <p>Se você está procurando uma empresa confiável e competente para ajudar a sua empresa a
+                            atingir o sucesso, não procure mais. Entre em contato conosco hoje mesmo e descubra como
+                            podemos ajudá-lo!</p>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <img src="img/livro.png" id="livro" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--*-----------------Nossos Serviços------------------->
+        <section id="nossosServicos">
+            <h1 class="title text-center">NOSSOS SERVIÇOS</h1>
+            <div class="container-lg text-center">
+                <div class="row">
+                    <div class="col-md text-justify" id="card">
+                        <h4 class="text-center">APPS E SOFTWARES</h4>
+                        <p>Desenvolvemos apps e softwares que funcionam em diferentes plataformas, como iOS, Android e
+                            Windows.</p>
+                        <img src="img/engrenagem.svg" class="icons-img" id="imgCard">
+                    </div>
+                    <div class="col-md text-justify" id="card">
+                        <h4 class="text-center">WEB DESIGN</h4>
+                        <p>Oferecemos serviços de web design que utilizam as últimas tecnologias da web 3.0 para criar
+                            sites modernos, interativos e responsivos.</p>
+                        <img src="img/web.svg" class="icons-img" id="imgCard">
+                    </div>
+                    <div class="col-md text-justify" id="card">
+                        <h4 class="text-center">IDENTIDADE VISUAL</h4>
+                        <p>Desenvolvemos apps e softwares que funcionam em diferentes plataformas, como iOS, Android e
+                            Windows.</p>
+                        <img src="img/pen.svg" class="icons-img" id="imgCard">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--*-----------------Nossos Projetos------------------->
+        <section id="nossosProjetos">
+            <h1 class="title text-center">NOSSOS PROJETOS</h1>
+            <!--Carrossel-->
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/banner.png" alt="Primeiro Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a href=""><button id="buttonCarrossel">Conheça o Projeto</button></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/breve.jpg"
+                            alt="Segundo Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a href=""><button id="buttonCarrossel">Conheça o Projeto</button></a>
+                            </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+
+        </section>
+        <!--*-----------------Contato------------------->
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>

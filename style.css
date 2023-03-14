@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'Neue-Bold';
+    src: url(NeueHaasDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: 'Neue-Ligth';
+    src: url(NeueHaasDisplay-Light.ttf);
+}
+
+/**-------------Variaveis--------------*/
+:root{
+    --cor-fundo: #0D0D0D;
+    --cor-letra: #F5F5EF;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cor-fundo) !important;
+    color: var(--cor-letra) !important;
+}
+
+/**-------------NavBar--------------*/
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: rgba(13, 13, 13, 0.01);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(25px);
+}
+
+.navbar-brand img{
+    height: 30px;
+    padding-left: 30%;
+}
+
+.navbar-nav li{
+    padding: 15px 50px 15px 50px;
+}
+
+.navbar-nav li a{
+    color: #ffff !important;
+    font-weight: 400;
+    float: right;
+    text-align: left;
+}
+
+/**-------------Main--------------*/
+main{
+    max-width: 1440px;
+    margin: auto;
+}
+
+/**-------------Banner--------------*/
+#banner{
+    padding-top: 10%;
+}
+
+#grad1{
+    position: absolute;
+    background-image: url(img/grad1.png);
+    background-repeat: no-repeat;    
+    left: 0;
+    top: -20px;
+    z-index: -10;
+}
+
+.titleBanner{
+    margin-top: 100px;
+    font-family: 'Neue-Ligth';
+    font-size: 40px;
+}
+
+.subtitle{
+    font-family: 'Neue-Bold';
+    margin-top: -15px;
+    margin-bottom: 45px;
+    font-size: 40px;
+}
+
+#seta{
+    margin-top: 60px;
+    margin-bottom: 250px;
+    z-index: 400;
+}
+
+/**-------------Quem Somos--------------*/
+#quemSomos{
+    padding-top: 6%;
+}
+
+#quemSomos p {
+    letter-spacing: 0.3px;
+    font-size: 26px;
+    font-weight: 200;
+}
+
+.title{
+    font-family: 'Neue-Bold';
+    font-size: 64px;
+    color: #fff;
+}
+
+#livro {
+    border-radius: 15px ;
+    z-index: -30;
+}
+
+#grad2{
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 500px;
+    width: 50%;
+    right: 0;
+    z-index: 1;
+}
+
+/**-----------Nossos Serviços----------------*/
+#nossosServicos{
+    padding-top: 15%;
+    z-index: 2;
+}
+
+#nossosServicos h4{
+    font-weight: 700;
+}
+
+#nossosServicos p {
+    letter-spacing: 0.3px;
+    font-size: 19px;
+    font-weight: 200;
+}
+
+#card{
+    background: rgba(26, 26, 26, 0.1);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(25px);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+    margin-top: 150px;
+}
+
+#imgCard {
+    width: 75px;
+    height: 66px;
+    position: absolute;
+    z-index: 2;
+    left: 40%;
+    top: -15%;
+}
+
+/**-----------Nossos projetos----------------*/
+#nossosProjetos{
+    margin-top: 15%;
+}
+
+#buttonCarrossel{
+justify-content: center;
+align-items: center;
+padding: 20px;
+background: var(--cor-fundo);
+border-radius: 6px;
+font-weight: 700;
+font-size: 19px;
+color: var(--cor-letra);
+cursor: pointer;
+border: none;
+}
+
+/**-------------RESPONSIVIDADE--------------*/
+@media only screen and (max-width: 1440px ) {
+    #grad1{
+        left: -10%;
+    }
+
+    main{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #quemSomos p {
+        font-size: 23px;
+    }
+
+    #grad2{
+    top: 700px;
+    width: 50%;
+    right: 0;
+}
+}
+@media only screen and (max-width: 1200px ) {
+    #grad1{
+        left: -20%;
+    }
+
+    #quemSomos p {
+        font-size: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 960px ) {
+    #grad1{
+        left: -40%;
+    }
+
+    #grad2{
+        top: 1200px;
+        width: 100%;
+        right: 0;
+        z-index: -1;
+    }
+
+    #card{
+        margin-top: 50px;
+    }
+}
