@@ -1,27 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @font-face {
     font-family: 'Neue-Bold';
     src: url(NeueHaasDisplay-Bold.ttf);
 }
+
 @font-face {
     font-family: 'Neue-Ligth';
     src: url(NeueHaasDisplay-Light.ttf);
 }
 
 /**-------------Variaveis--------------*/
-:root{
+:root {
     --cor-fundo: #0D0D0D;
     --cor-letra: #F5F5EF;
+    --cor-botão1: #7A37CC;
+    --cor-glassmorphism: rgba(26, 26, 26, 0.1);
 }
 
-body{
+body {
     font-family: 'Inter', sans-serif;
     background-color: var(--cor-fundo) !important;
     color: var(--cor-letra) !important;
 }
 
 /**-------------NavBar--------------*/
-#nav-bar{
+#nav-bar {
     position: sticky;
     top: 0;
     z-index: 2;
@@ -30,16 +34,16 @@ body{
     backdrop-filter: blur(25px);
 }
 
-.navbar-brand img{
+.navbar-brand img {
     height: 30px;
     padding-left: 30%;
 }
 
-.navbar-nav li{
+.navbar-nav li {
     padding: 15px 50px 15px 50px;
 }
 
-.navbar-nav li a{
+.navbar-nav li a {
     color: #ffff !important;
     font-weight: 400;
     float: right;
@@ -47,67 +51,67 @@ body{
 }
 
 /**-------------Main--------------*/
-main{
-    max-width: 1440px;
+main {
+    max-width: 1350px;
     margin: auto;
 }
 
 /**-------------Banner--------------*/
-#banner{
+#banner {
     padding-top: 10%;
 }
 
-#grad1{
+#grad1 {
     position: absolute;
     background-image: url(img/grad1.png);
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     left: 0;
     top: -20px;
     z-index: -10;
 }
 
-.titleBanner{
+.titleBanner {
     margin-top: 100px;
     font-family: 'Neue-Ligth';
     font-size: 40px;
 }
 
-.subtitle{
+.subtitleBanner {
     font-family: 'Neue-Bold';
     margin-top: -15px;
     margin-bottom: 45px;
     font-size: 40px;
 }
 
-#seta{
+#seta {
     margin-top: 60px;
     margin-bottom: 250px;
     z-index: 400;
 }
 
 /**-------------Quem Somos--------------*/
-#quemSomos{
-    padding-top: 6%;
+#quemSomos {
+    padding-top: 7%;
 }
 
 #quemSomos p {
     letter-spacing: 0.3px;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 200;
 }
 
-.title{
+.title {
     font-family: 'Neue-Bold';
     font-size: 64px;
     color: #fff;
 }
 
 #livro {
-    border-radius: 15px ;
+    border-radius: 15px;
     z-index: -30;
 }
 
-#grad2{
+#grad2 {
     position: absolute;
     background-repeat: no-repeat;
     top: 500px;
@@ -117,12 +121,12 @@ main{
 }
 
 /**-----------Nossos Serviços----------------*/
-#nossosServicos{
-    padding-top: 15%;
+#nossosServicos {
+    padding-top: 16%;
     z-index: 2;
 }
 
-#nossosServicos h4{
+#nossosServicos h4 {
     font-weight: 700;
 }
 
@@ -132,7 +136,7 @@ main{
     font-weight: 200;
 }
 
-#card{
+#card {
     background: rgba(26, 26, 26, 0.1);
     mix-blend-mode: normal;
     backdrop-filter: blur(25px);
@@ -152,30 +156,97 @@ main{
 }
 
 /**-----------Nossos projetos----------------*/
-#nossosProjetos{
+#nossosProjetos {
     margin-top: 15%;
+    padding-bottom: 15%;
 }
 
-#buttonCarrossel{
-justify-content: center;
-align-items: center;
-padding: 20px;
-background: var(--cor-fundo);
-border-radius: 6px;
-font-weight: 700;
-font-size: 19px;
-color: var(--cor-letra);
-cursor: pointer;
-border: none;
+#buttonCarrossel {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: var(--cor-fundo);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--cor-letra);
+    cursor: pointer;
+    border: none;
 }
+
+/**-----------Contato----------------*/
+#contato {
+    margin-top: 30%;
+    margin-bottom: 20%;
+}
+
+.allTitleContato {
+    margin-left: 5%;
+}
+
+.titleContato {
+    font-family: 'Neue-Ligth';
+    font-size: 64px;
+}
+
+.subtitleContato {
+    font-family: 'Neue-Bold';
+    margin-top: -15px;
+    margin-bottom: 45px;
+    font-size: 64px;
+}
+
+#textContato {
+    letter-spacing: 0.3px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.orcamento {
+    background-color: var(--cor-botão1);
+    padding: 16px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: var(--cor-letra);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: var(--cor-letra);
+    text-decoration: none;
+}
+
+#gradContato {
+    position: absolute;
+    z-index: -30;
+    background-repeat: no-repeat;
+    top: 390%;
+    left: 25%;
+}
+
+/**-----------Footer----------------*/
+.footer-copyright {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.fa-square-instagram {
+    width: 400px;
+}
+
+
+
 
 /**-------------RESPONSIVIDADE--------------*/
-@media only screen and (max-width: 1440px ) {
-    #grad1{
+@media only screen and (max-width: 1440px) {
+    #grad1 {
         left: -10%;
     }
 
-    main{
+    main {
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -184,14 +255,20 @@ border: none;
         font-size: 23px;
     }
 
-    #grad2{
-    top: 700px;
-    width: 50%;
-    right: 0;
+    #grad2 {
+        top: 700px;
+        width: 50%;
+        right: 0;
+    }
+
+    #gradContato {
+        top: 455%;
+        left: 15%;
+    }
 }
-}
-@media only screen and (max-width: 1200px ) {
-    #grad1{
+
+@media only screen and (max-width: 1200px) {
+    #grad1 {
         left: -20%;
     }
 
@@ -202,19 +279,34 @@ border: none;
 
 }
 
-@media only screen and (max-width: 960px ) {
-    #grad1{
+@media only screen and (max-width: 960px) {
+    #grad1 {
         left: -40%;
     }
 
-    #grad2{
+    #grad2 {
         top: 1200px;
         width: 100%;
         right: 0;
         z-index: -1;
     }
 
-    #card{
+    #card {
         margin-top: 50px;
     }
+}
+
+/**-----------scrollbar----------------*/
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--cor-glassmorphism);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid white;
 }
