@@ -10,6 +10,9 @@
     src: url(NeueHaasDisplay-Light.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+}
 /**-------------Variaveis--------------*/
 :root {
     --cor-fundo: #0D0D0D;
@@ -137,6 +140,7 @@ main {
 }
 
 #card {
+    position: relative;
     background: rgba(26, 26, 26, 0.1);
     mix-blend-mode: normal;
     backdrop-filter: blur(25px);
@@ -150,28 +154,59 @@ main {
     width: 75px;
     height: 66px;
     position: absolute;
-    z-index: 2;
     left: 40%;
-    top: -15%;
+    top: -12%;
 }
 
 /**-----------Nossos projetos----------------*/
 #nossosProjetos {
-    margin-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 15%;
 }
 
-#buttonCarrossel {
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background: var(--cor-fundo);
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: 19px;
-    color: var(--cor-letra);
-    cursor: pointer;
-    border: none;
+.bannerProjeto{
+    width: 100%;
+    transition: 0.2s;
+}
+
+.projeto{
+    position: relative;
+
+}
+
+.logoProjetos{
+    position: absolute;
+    top: 25%;
+    left: 37%;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.logoProjetos img{
+    width: 100%;
+}
+
+.botaoProjetos{
+    background-color: #0D0D0D !important; 
+    position: absolute;
+    bottom: 0;
+    Left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.projeto:hover .botaoProjetos{
+    bottom: 30px;
+    opacity: 1; 
+}
+
+.projeto:hover .logoProjetos{
+    top: 15%;
+}
+.projeto:hover .bannerProjeto{
+    mix-blend-mode: normal;
+    filter: blur(2px); 
 }
 
 /**-----------Contato----------------*/
@@ -223,8 +258,8 @@ a:active {
     position: absolute;
     z-index: -30;
     background-repeat: no-repeat;
-    top: 390%;
-    left: 25%;
+    top: -100%;
+    left: 15%;
 }
 
 /**-----------Footer----------------*/
@@ -286,13 +321,22 @@ a:active {
 
     #grad2 {
         top: 1200px;
-        width: 100%;
+        width: 100%;    
         right: 0;
         z-index: -1;
     }
 
     #card {
         margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #imgCard{
+        position: absolute;
+        z-index: 2;
+        left: 35%;
+        top: -10%;
     }
 }
 
