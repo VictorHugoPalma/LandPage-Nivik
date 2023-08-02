@@ -89,7 +89,6 @@ main {
 #seta {
     margin-top: 60px;
     margin-bottom: 250px;
-    z-index: 400;
 }
 
 /**-------------Quem Somos--------------*/
@@ -120,8 +119,9 @@ main {
     top: 500px;
     width: 50%;
     right: 0;
-    z-index: 1;
 }
+
+
 
 /**-----------Nossos Serviços----------------*/
 #nossosServicos {
@@ -175,21 +175,21 @@ main {
 
 .logoProjetos{
     position: absolute;
-    top: 25%;
-    left: 37%;
+    top: 26%;
+    left: 34%;
     transform-style: preserve-3d;
     transition: 0.5s;
 }
 
 .logoProjetos img{
-    width: 100%;
+    width: 90%;
 }
 
 .botaoProjetos{
     background-color: #0D0D0D !important; 
     position: absolute;
     bottom: 0;
-    Left: 50%;
+    Left: 60%;
     transform-style: preserve-3d;
     transform: translate3d(-50%,0,75px);
     transition: 0.5s;
@@ -197,7 +197,7 @@ main {
 }
 
 .projeto:hover .botaoProjetos{
-    bottom: 30px;
+    bottom: 75px;
     opacity: 1; 
 }
 
@@ -329,6 +329,12 @@ a:active {
     #card {
         margin-top: 50px;
     }
+
+    #gradContato {
+        opacity: 1;
+        top: 0;
+        left: 0;
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -337,6 +343,11 @@ a:active {
         z-index: 2;
         left: 35%;
         top: -10%;
+    }
+
+    #gradContato {
+        opacity: 0;
+        top: 0;
     }
 }
 
