@@ -104,8 +104,9 @@ main {
 
 .title {
     font-family: 'Neue-Bold';
-    font-size: 64px;
+    font-size: 300%;
     color: #fff;
+    padding-bottom: 2%;
 }
 
 #livro {
@@ -135,7 +136,7 @@ main {
 
 #nossosServicos p {
     letter-spacing: 0.3px;
-    font-size: 19px;
+    font-size: 120%;
     font-weight: 200;
 }
 
@@ -216,19 +217,19 @@ main {
 }
 
 .allTitleContato {
-    margin-left: 5%;
+    margin-left: 0%;
 }
 
 .titleContato {
     font-family: 'Neue-Ligth';
-    font-size: 64px;
+    font-size: 350%;
 }
 
 .subtitleContato {
     font-family: 'Neue-Bold';
     margin-top: -15px;
     margin-bottom: 45px;
-    font-size: 64px;
+    font-size: 350%;
 }
 
 #textContato {
@@ -287,7 +288,7 @@ a:active {
     }
 
     #quemSomos p {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     #grad2 {
@@ -308,7 +309,7 @@ a:active {
     }
 
     #quemSomos p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
 
@@ -341,7 +342,7 @@ a:active {
     #imgCard{
         position: absolute;
         z-index: 2;
-        left: 35%;
+        left: 38%;
         top: -10%;
     }
 
@@ -349,6 +350,20 @@ a:active {
         opacity: 0;
         top: 0;
     }
+
+    .logoProjetos{
+        left: 10%;
+        top: 20%;
+    }
+
+    .botaoProjetos{
+        Left: 50%;
+    }
+
+    .projeto:hover .logoProjetos{
+        top: 13%;
+    }
+
 }
 
 /**-----------scrollbar----------------*/
