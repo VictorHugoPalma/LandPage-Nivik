@@ -55,7 +55,7 @@ body {
 
 /**-------------Main--------------*/
 main {
-    max-width: 1350px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -104,7 +104,7 @@ main {
 
 .title {
     font-family: 'Neue-Bold';
-    font-size: 300%;
+    font-size: 400%;
     color: #fff;
     padding-bottom: 2%;
 }
@@ -339,6 +339,9 @@ a:active {
 }
 
 @media only screen and (max-width: 600px){
+    p {
+        font-size: 100%;
+    }
     #imgCard{
         position: absolute;
         z-index: 2;
@@ -364,6 +367,62 @@ a:active {
         top: 13%;
     }
 
+    .title {
+        font-size: 200%;
+    }
+
+    .titleBanner {
+        font-size: 35px;
+    }
+    
+    .subtitleBanner {
+        font-size: 30px;
+    }
+    
+    #nossosServicos h4 {
+        font-weight: 700;
+        padding-top: 10%;
+    }
+    
+    #nossosServicos p {
+        font-size: 100%;
+    }
+    
+    #card {
+        padding: 25px;
+        margin: 25px;
+        border-radius: 20px;
+        margin-top: 50px;
+    }
+    
+    #imgCard {
+        width: 65px;
+        height: 56px;
+        position: absolute;
+        left: 38%;
+        top: -15%;
+    }
+
+    .titleContato {
+        font-size: 300%;
+    }
+    
+    .subtitleContato {
+        font-family: 'Neue-Bold';
+        margin-top: -15px;
+        margin-bottom: 30px;
+        font-size: 280%;
+    }
+
+    #textContato{
+        font-size: 100%; 
+    }
+
+    #quemSomos p {
+        letter-spacing: 0px;
+        font-size: 100%;
+    }
+    
 }
 
 /**-----------scrollbar----------------*/
