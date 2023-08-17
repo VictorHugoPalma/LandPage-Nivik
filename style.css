@@ -268,9 +268,12 @@ a:active {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-.page-footer{
-    font-size: 80% !important;
+
+.fa-square-instagram {
+    width: 400px;
 }
+
+
 
 
 /**-------------RESPONSIVIDADE--------------*/
