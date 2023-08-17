@@ -268,11 +268,13 @@ a:active {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-
-.fa-square-instagram {
-    width: 400px;
+.page-footer{
+    font-size: 80% !important;
 }
 
+.page-footer img{
+    width: 80%;
+}
 
 
 
