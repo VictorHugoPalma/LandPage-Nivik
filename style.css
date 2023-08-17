@@ -272,11 +272,6 @@ a:active {
     font-size: 80% !important;
 }
 
-.page-footer img{
-    width: 80%;
-}
-
-
 
 /**-------------RESPONSIVIDADE--------------*/
 @media only screen and (max-width: 1440px) {
