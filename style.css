@@ -336,12 +336,24 @@ a:active {
         top: 0;
         left: 0;
     }
+
+    .titleContato {
+        font-size: 300%;
+    }
+    
+    .subtitleContato {
+        font-family: 'Neue-Bold';
+        margin-top: -15px;
+        margin-bottom: 30px;
+        font-size: 280%;
+    }
+
+    #textContato{
+        font-size: 100%; 
+    }
 }
 
 @media only screen and (max-width: 600px){
-    p {
-        font-size: 100%;
-    }
     #imgCard{
         position: absolute;
         z-index: 2;
@@ -403,20 +415,6 @@ a:active {
         top: -15%;
     }
 
-    .titleContato {
-        font-size: 300%;
-    }
-    
-    .subtitleContato {
-        font-family: 'Neue-Bold';
-        margin-top: -15px;
-        margin-bottom: 30px;
-        font-size: 280%;
-    }
-
-    #textContato{
-        font-size: 100%; 
-    }
 
     #quemSomos p {
         letter-spacing: 0px;
